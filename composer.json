@@ -1,0 +1,20 @@
+{
+    "name": "maclof/extensions",
+    "description": "A Laravel 4.2+ compatible package for building modular extensions.",
+    "authors": [
+        {
+            "name": "Marc Lough",
+            "email": "maclof@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Maclof\\Extensions": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
