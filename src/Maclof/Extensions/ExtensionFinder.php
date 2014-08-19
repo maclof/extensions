@@ -58,7 +58,7 @@ class ExtensionFinder {
 			if (is_array($attributes) && isset($attributes['slug']))
 			{
 				// Initialise the extension class.
-				$extensions[$attributes['slug']] = new Extension($attributes);
+				$extensions[$attributes['slug']] = new Extension(dirname($file), $attributes);
 			}
 		}
 

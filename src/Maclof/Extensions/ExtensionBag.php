@@ -72,8 +72,11 @@ class ExtensionBag {
 				continue;
 			}
 
+			// Set the container.
+			$extension->setContainer($this->container);
+
 			// Register the extension.
-			$extension->register($this->container);
+			$extension->register();
 		}
 
 		// Boot the extensions.
@@ -86,7 +89,7 @@ class ExtensionBag {
 			}
 
 			// Boot the extension.
-			$extension->boot($this->container);
+			$extension->boot();
 		}
 	}
 

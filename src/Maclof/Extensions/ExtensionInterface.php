@@ -5,19 +5,24 @@ use Illuminate\Container\Container;
 interface ExtensionInterface {
 
 	/**
+	 * Set the container.
+	 * 
+	 * @param Container $container
+	 */
+	public function setContainer(Container $container);
+
+	/**
 	 * Register the extension.
 	 *
-	 * @param  Container $container
 	 * @return void
 	 */
-	public function register(Container $container);
+	public function register();
 
 	/**
 	 * Boot the extension.
 	 *
-	 * @param  Container $container
 	 * @return void
 	 */
-	public function boot(Container $container);
+	public function boot();
 
 }
